@@ -1,7 +1,0 @@
-{
-  "forbidden_outputs": [
-    "comandos de sistema",
-    "execucao de codigo"
-  ],
-  "state_policy": "explicit_only"
-}
