@@ -1,0 +1,11 @@
+Threat Model
+
+Riscos principais:
+- prompt injection via memoria persistida
+- exposicao de dados sensiveis em logs
+- classificacao incorreta de memoria
+
+Mitigacoes atuais:
+- sanitizacao basica de memoria
+- separacao por tipo de memoria
+- modo fast com contexto reduzido

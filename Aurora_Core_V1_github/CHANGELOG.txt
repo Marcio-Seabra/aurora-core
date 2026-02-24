@@ -1,0 +1,31 @@
+CHANGELOG - Aurora Core
+
+Formato:
+- Added: novas funcionalidades
+- Changed: alteracoes de comportamento/estrutura
+- Fixed: correcoes
+
+[0.1.1] - 2026-02-24
+Added:
+- Estrutura em src/ com pacote aurora_core.
+- Entry points: scripts/run_core.py e scripts/run_ingest.py.
+- Configuracao de modelo por ambiente:
+  - AURORA_CORE_MODEL
+  - AURORA_MEMORY_MODEL
+- Arquivo CAMADA_VERSAO.txt na raiz.
+
+Changed:
+- Defaults de modelo alinhados para:
+  - core: aurora-nucleo:latest
+  - ingest/memory: aurora_memory:latest
+- Documentacao de requisitos e uso movida para arquivos .txt.
+
+Fixed:
+- Diagnostico de falha no streaming (erros agora visiveis no terminal).
+- Fluxo de imports e paths ajustado para o novo layout.
+
+[0.1.0] - 2026-01-30
+Added:
+- Nucleo inicial do projeto Aurora Core.
+- Pipeline de ingestao de memoria com classificacao por tipo.
+- Loader de memoria, contexto e roteamento basico.

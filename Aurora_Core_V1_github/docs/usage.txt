@@ -1,0 +1,15 @@
+Uso
+
+Core:
+py scripts\run_core.py --mode fast
+
+Ingest:
+py scripts\run_ingest.py
+
+Modos:
+- fast: menor contexto e menor latencia
+- precise: maior contexto e maior qualidade
+
+Modelos (opcional):
+- AURORA_CORE_MODEL
+- AURORA_MEMORY_MODEL

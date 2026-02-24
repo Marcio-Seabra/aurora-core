@@ -1,0 +1,9 @@
+Arquitetura (Resumo)
+
+Fluxo:
+1. data/*.txt -> ingest_pipeline
+2. splitter + classifier
+3. memory/identity, memory/short_term, memory/long_term
+4. memory_loader monta contexto
+5. core decide rota e chama executors
+6. Ollama responde

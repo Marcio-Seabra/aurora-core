@@ -1,0 +1,1 @@
+# pacote aurora_memory

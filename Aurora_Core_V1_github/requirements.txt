@@ -1,0 +1,37 @@
+Requisitos para executar o sistema Aurora Core
+
+1) Sistema operacional
+- Windows, Linux ou macOS
+
+2) Python
+- Recomendado: Python 3.11
+- Minimo: Python 3.10+
+
+3) Ollama
+- Ollama instalado e acessivel no PATH
+- Ollama API ativa em 127.0.0.1:11434
+
+4) Modelos (baseados em Llama 3.1 8B)
+- Necessario 2 modelos logicos:
+  - um para core
+  - um para ingest/memory
+- Pode ser:
+  - dois modelos separados, ou
+  - uma base unica com 2 aliases (criados via Modelfile, opcional)
+
+Defaults usados no codigo:
+- Core: aurora-nucleo:latest
+- Ingest/memory: aurora_memory:latest
+
+Overrides por variavel de ambiente:
+- AURORA_CORE_MODEL
+- AURORA_MEMORY_MODEL
+
+5) Estrutura de runtime
+- pasta data/ para entrada de arquivos .txt
+- pasta memory/ para estado e saida
+- arquivo decision_layer/rules.json para roteamento
+
+6) Formato de entrada para ingestao
+- nome do arquivo no padrao *_DD_MM_AAAA.txt
+- conteudo UTF-8 com minimo de 10 caracteres

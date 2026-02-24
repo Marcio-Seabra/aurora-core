@@ -1,0 +1,14 @@
+Roadmap
+
+Curto prazo:
+- estabilizar latencia no modo fast
+- aumentar cobertura de testes
+- robustecer parser do splitter
+
+Medio prazo:
+- integrar executores reais (imagem/video/ferramentas)
+- adicionar embeddings para recuperacao semantica
+
+Longo prazo:
+- politicas de seguranca e governanca
+- orquestracao multiagente

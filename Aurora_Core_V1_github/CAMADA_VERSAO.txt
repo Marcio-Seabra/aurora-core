@@ -1,0 +1,30 @@
+Camada de Versao: 0.1.1
+
+Base anterior:
+- 0.1.0
+
+Novidades da versao 0.1.1:
+- Reestruturacao para layout src/ com pacote aurora_core.
+- Entrada padrao por scripts/run_core.py e scripts/run_ingest.py.
+- Organizacao modular: core, decision_layer, memory, pipeline e utils.
+- Ajuste de imports para pacote interno (sem dependencia de path ad-hoc).
+- Inclusao de __version__ no pacote.
+- Padronizacao de execucao com Python 3.11.
+- Configuracao de modelos por variavel de ambiente:
+  - AURORA_CORE_MODEL
+  - AURORA_MEMORY_MODEL
+- Defaults alinhados aos modelos reais:
+  - core: aurora-nucleo:latest
+  - ingest/memory: aurora_memory:latest
+- Melhoria de diagnostico no core:
+  - erros de chamada/modelo agora aparecem no terminal
+  - resposta vazia de stream gera mensagem explicita
+- Atualizacao do README e docs/usage com requisitos completos e formas de configuracao.
+- Comentarios no codigo explicando quais parametros podem ser alterados
+  (modelos, modo fast/precise e splitter LLM).
+- Validacao de funcionamento:
+  - import e entrypoints validados com Python 3.11
+  - teste E2E do core com resposta do modelo
+
+Notas:
+- Modelos Aurora continuam baseados em Llama 3.1 via Ollama.

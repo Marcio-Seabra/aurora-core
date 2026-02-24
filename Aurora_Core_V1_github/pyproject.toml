@@ -1,0 +1,8 @@
+[project]
+name = "aurora-core"
+version = "0.1.1"
+description = "Aurora Core with external memory and routing."
+requires-python = ">=3.11,<3.12"
+
+[tool.ruff]
+line-length = 100
